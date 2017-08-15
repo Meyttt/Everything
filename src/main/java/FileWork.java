@@ -3,6 +3,7 @@ import org.apache.commons.io.FileUtils;
 import java.io.File;
 import java.io.IOException;
 
+
 /**
  * Created by Meyttt on 12.08.2017.
  */
@@ -16,6 +17,7 @@ public class FileWork {
         }
         System.out.println(readed);
         System.out.println(FileUtils.readFileToString(file,"utf-8"));
+
 
     }
 }
