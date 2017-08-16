@@ -22,16 +22,6 @@ public class CommandLineTests {
     static String[] realArgs;
     public static void main(String[] args) throws Exception {
         System.setProperty("file.encoding","windows-1251");
-//        Option greeting = new Option(greetingOption,true,"Включение/отключение приветствия(true/false)");
-//        Option type = new Option(typeOption, true, "Выбор представления времени - дата/ день недели(date/day");
-//        Options options = new Options();
-//        options.addOption(greeting);
-//        options.addOption(type);
-//        realArgs=args;
-//        for (String arg: args){
-//            System.out.println(arg);
-//        }
-//        requireArgs(typeOption,greetingOption);
         List<Argument> expected = new LinkedList<Argument>();
         expected.add(new Argument(greetingOption,new HashSet<String>(Arrays.asList(new String[]{"true","false"}))));
         expected.add(new Argument(typeOption,new HashSet<String>(Arrays.asList(new String[]{"date","day"}))));
