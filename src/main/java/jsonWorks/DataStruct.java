@@ -1,4 +1,4 @@
-package JsonWorks;
+package jsonWorks;
 
 /**
  * Created by Meyttt on 15.08.2017.
