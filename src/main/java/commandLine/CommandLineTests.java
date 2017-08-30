@@ -45,7 +45,7 @@ public class CommandLineTests {
                     break;
                 case(greetingOption):
                     switch (argument.getValue()){
-                        case("true"):
+                        case ("true"):
                             stringBuilder.append("\nHave a good day, dear :)");
                             break;
                         case ("false"):

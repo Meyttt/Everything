@@ -1,7 +1,12 @@
 package postgresql.sql;
 
+import org.omg.CORBA.Object;
+import postgresql.database.utils.query.DefaultMapper;
+
+import java.lang.annotation.RetentionPolicy;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.*;
 
 /**
  * Created by a.chebotareva on 17.05.2017.
@@ -36,6 +41,7 @@ public class Operator {
     private String region_code,closed;
     private String closed_date,modified_by;
 
+
     public Operator(ResultSet resultSet) throws SQLException {
         this.id = resultSet.getBigDecimal("id").toString();
         try {
@@ -62,9 +68,11 @@ public class Operator {
         this.closed = resultSet.getString("closed");
         this.closed_date = resultSet.getString("closed_date");
         this.modified_by = resultSet.getString("modified_by");
+//        default
     }
 
     public String getShort_name() {
         return short_name;
     }
+
 }

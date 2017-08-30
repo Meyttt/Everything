@@ -15,11 +15,11 @@ public class Listener extends Thread {
     private Connection connection;
     private PGConnection pgConnection;
 
-    public Listener(Connection connection) throws SQLException {
+    public Listener(Connection connection, String channel) throws SQLException {
         this.connection = connection;
         this.pgConnection = (PGConnection) connection;
         Statement statement= connection.createStatement();
-        statement.execute("LISTEN message");
+        statement.execute("LISTEN "+channel);
         statement.close();
     }
     public void run(){
@@ -31,7 +31,6 @@ public class Listener extends Thread {
                 statement.close();
 
                 PGNotification[] notifications= pgConnection.getNotifications();
-                System.out.println("test");
                 if(notifications!=null){
                     for (PGNotification notification:notifications){
                         System.out.println("Got notification: "+notification.getName());
