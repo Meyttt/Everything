@@ -1,4 +1,4 @@
-package multithreading;
+package multithreading.poets;
 
 import java.util.concurrent.SynchronousQueue;
 

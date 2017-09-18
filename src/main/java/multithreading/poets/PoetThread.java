@@ -1,4 +1,4 @@
-package multithreading;
+package multithreading.poets;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
