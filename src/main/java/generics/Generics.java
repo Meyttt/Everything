@@ -1,3 +1,5 @@
+package generics;
+
 import java.util.*;
 
 /**
@@ -15,10 +17,10 @@ public class Generics<T> {
     }
 
     public static void main(String[] args) {
-//        Generics<String> stringGenerics = new Generics<>("Cat");
+//        generics.Generics<String> stringGenerics = new generics.Generics<>("Cat");
 //        String val = stringGenerics.getValue();
 //
-//        Generics<Integer> integerGenerics = new Generics<>(666);
+//        generics.Generics<Integer> integerGenerics = new generics.Generics<>(666);
 //        Integer a = integerGenerics.getValue();
 //        List intList = new ArrayList();
 //        intList.add(1);
